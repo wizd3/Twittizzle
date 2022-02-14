@@ -13,6 +13,7 @@ The following **required** functionality is completed:
 - [x] User can log out. (1pt)
 - [x] User stays logged in across restarts. (1pt)
 - [ ] User can view tweets with the user profile picture, username, and tweet text. (6pts)
+
       Note: there is an error when using the api to retrieve the tweets. The error is related to the accessibility of my developer account. However, this feature is implemented programmatically, so it should work by using different key token.
 
 The following **bonus** features are implemented:
