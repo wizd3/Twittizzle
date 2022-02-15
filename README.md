@@ -12,9 +12,7 @@ The following **required** functionality is completed:
 - [x] User can log in. (1pt)
 - [x] User can log out. (1pt)
 - [x] User stays logged in across restarts. (1pt)
-- [ ] User can view tweets with the user profile picture, username, and tweet text. (6pts)
-
-      Note: there is an error when using the api to retrieve the tweets. The error is related to the accessibility of my developer account. However, this feature is implemented programmatically, so it should work by using different key token.
+- [x] User can view tweets with the user profile picture, username, and tweet text. (6pts)
 
 The following **bonus** features are implemented:
 
@@ -25,4 +23,4 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/wSPcACiiXB.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/k3yNG0Cq77.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
