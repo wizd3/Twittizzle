@@ -10,7 +10,8 @@ import UIKit
 import BDBOAuth1Manager
 
 class TwitterAPICaller: BDBOAuth1SessionManager {    
-    static let client = TwitterAPICaller(baseURL: URL(string: "https://api.twitter.com"), consumerKey: "aaoj0uql29faguahf8Dad17HF", consumerSecret: "SXQRornSP6wEJuGFTJAr7E9UhtaUrnKHRcqmMP0sKYLiyx0pVh")
+    static let client = TwitterAPICaller(baseURL: URL(string: "https://api.twitter.com"), consumerKey: "5lUJuO5AUpPUCez4ewYDFrtgh", consumerSecret: "s5ynGqXzstUZwFPxVyMDkYh197qvHOcVM3kwv1o2TKhS1avCdS")
+    //static let client = TwitterAPICaller(baseURL: URL(string: "https://api.twitter.com"), consumerKey: "aaoj0uql29faguahf8Dad17HF", consumerSecret: "SXQRornSP6wEJuGFTJAr7E9UhtaUrnKHRcqmMP0sKYLiyx0pVh")
     var loginSuccess: (() -> ())?
     var loginFailure: ((Error) -> ())?
     
