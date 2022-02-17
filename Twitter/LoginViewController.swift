@@ -13,39 +13,38 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        // When the screen appears, check if the user is already logged in, if so, navigate to the next screen "Home":
         if(UserDefaults.standard.bool(forKey: "userLoggedIn") == true){
             performSegue(withIdentifier: "loginToHome", sender: self)
         }
+        
     }
     
-    
+    // When the login button is pressed:
     @IBAction func LoginButtonPressed(_ sender: UIButton) {
         
+        // Use the Twitter API to authorize the user:
         let myURL = "https://api.twitter.com/oauth/request_token"
         
+        // Login:
         TwitterAPICaller.client?.login(url: myURL, success: {
             
+            // Change the user logged in status:
             UserDefaults.standard.set(true, forKey: "userLoggedIn")
             
+            // Navigate to the next screen "Home":
             self.performSegue(withIdentifier: "loginToHome", sender: self)
-        }, failure: { Error in
-            print("Could not log in!")
+            
+        }, failure: { error in
+            
+            // If there's an error print it:
+            print(error.localizedDescription)
         })
     
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
