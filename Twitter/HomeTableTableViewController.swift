@@ -31,7 +31,7 @@ class HomeTableTableViewController: UITableViewController {
         
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         // Load the tweets whenever the screen appears:
